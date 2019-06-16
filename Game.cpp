@@ -57,14 +57,6 @@ void Game::handleEvents()
   case SDL_QUIT:
     isRunning = false;
     break;
-    /*  case SDL_KEYDOWN:
-    switch (event.key.keysym.sym) {
-    case SDLK_ESCAPE:
-    case SDLK_q:
-      isRunning = false;
-      break;
-    }
-    break;*/
   default:
     break;
   }
@@ -74,9 +66,10 @@ void Game::handleEvents()
 
 void Game::update()
 {
+  cnt++;
   destR.h = 32;
   destR.w = 32;
-  
+  destR.x = cnt;
 }
 
 void Game::render()

@@ -17,6 +17,7 @@ class Game {
   bool running() { return isRunning; }
 
  private:
+  int cnt;
   bool isRunning;
   SDL_Window *window;
   SDL_Renderer *renderer;
